@@ -8,9 +8,13 @@
 
 class Landmark {
 public:
-    Landmark(double x, double y);
-    ~Landmark();
+    Landmark(int id, double x, double y) : id(id), x(x), y(y) {};
+    ~Landmark() = default;
+    double getX() const { return x; }
+    double getY() const { return y; }
+    int getId() const { return id; }
 private:
+    int id;
     double x;
     double y;
 };

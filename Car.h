@@ -5,15 +5,19 @@
 #ifndef SLAM_CAR_H
 #define SLAM_CAR_H
 
-
 class Car {
 public:
-    Car();
-    ~Car();
+    Car() = default;
+    ~Car() = default;
+    void move(double velocity, double angular_velocity, double dt);
+    double getX() const { return x; }
+    double getY() const { return y; }
+    double getTheta() const { return theta_heading; }
+
 private:
     double x;
     double y;
-    double heading;
+    double theta_heading = 0.0;
 };
 
 

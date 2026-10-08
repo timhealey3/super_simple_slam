@@ -7,4 +7,10 @@ add_executable(SLAM main.cpp
         Car.cpp
         Car.h
         Landmark.cpp
-        Landmark.h)
+        Landmark.h
+        Helper.cpp
+        Helper.h
+        Odometer.cpp
+        Odometer.h
+        Sensor.cpp
+        Sensor.h)
